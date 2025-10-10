@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <title>Hotel Reservation Form</title>
+</head>
+<body>
+
+<style>
+label {
+  display: block;
+  margin-bottom: 2px; 
+}
+</style>
+
+<h1>Reservation Hotel Room</h1>
+
+<form action="" method="post">
+
+   <fieldset>
+         <legend><strong>Personal Date</strong></legend>
+          <p><label for="name">1. Name</label>
+           <input type="text" id="name" name="name" /></p>
+
+         <p><label for="gend">2. Gender</label>
+         <input type="text" id="gend" name="gend" /></p>
+
+         <p><label for="email">3. Email Address</label>
+         <input type="text" id="email" name="email" /></p>
+
+         <p><label for="telepon">4. Telp Number</label>
+         <input type="text" id="telepon" name="telepon" /></p>
+   </fieldset>
+
+   <fieldset>
+       <legend><strong>Reservation Room Form</strong></legend>
+      <p><label for="resv">1. Reservation Name</label>
+      <input type="text" id="resv" name="resv" /></p>
+
+     <p><label for="resv">2. Booking date</label>
+      <input type="text" id="bookDate" name="bookDate" /></p>
+
+       <p><label for="room">3. Room Type</label>
+      <select id="room" name="room">
+         <option>Deluxe</option>
+         <option>Superior</option>
+         <option>Executive</option>
+      </select></p>
+
+      <p><label for="bedType">4. Bed Type</label>
+      <select id="bedType" name="bedType">
+         <option>Single bed</option>
+         <option>Double bed</option>
+         <option>King bed</option>
+      </select></p>
+
+      <label for="breakfast">4. Breakfast</label>
+      <input type="radio" id="with" name="breakfast" value="With Breakfast" />
+      <label for="with">With Breakfast</label>
+      <input type="radio" id="without" name="breakfast" value="Without Breakfast" />
+      <label for="without">Without Breakfast</label>
+      
+   </fieldset>
+
+   <fieldset>
+      <legend><strong>Payment</strong></legend>
+        <p><label for="checkIn">1. Check in date</label>
+      <input type="text" id="checkIn" name="checkIn" /></p>
+                <p><label for="checkOut">2. Check out date</label>
+               <input type="text" id="checkOut" name="checkOut" /></p>
+
+                 <p><label for="payment">3. Payment Method</label>
+                <select id="payment" name="payment">
+               <option>Cash</option>
+               <option>Credit Card</option>
+               <option>Transfer</option>
+         </select></p>
+       </fieldset>
+
+          <p><input type="submit" value="submit" /></p>
+   </form>
+
+</body>
+</html>
